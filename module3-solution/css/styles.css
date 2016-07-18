@@ -1,0 +1,182 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #134768;
+  font-family: 'Oxygen', sans-serif;
+  padding-top: 110px;
+}
+p {
+  position: relative;
+  border: 1px solid black;
+  background-color: gray;
+  width: 100%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 12px;
+  color: white;
+  padding: 50px 10px 10px 10px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.7em;  
+}
+
+.title_region {
+  position: absolute;
+  margin: 0px;
+  right: 0px;
+  top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+.title_1 {
+  position: absolute;
+  background-color: purple;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 125%;
+  color: yellow;
+  padding: 10px;
+}
+
+.title_2 {
+  background-color: blue;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 125%;
+  color: yellow;
+  padding: 10px; 
+}
+
+.title_3 {
+  background-color: green;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 125%;
+  color: yellow;
+  padding: 10px; 
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }  
+}
